@@ -1,0 +1,36 @@
+.th{
+    background-color: yellow;
+}
+
+table, th, td {
+    border: 2px solid rgb(4, 14, 149);
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(4, 14, 149);
+    background-color: rgb(255, 255, 255);
+}
+
+caption {
+    caption-side: top;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:rgb(4, 14, 149)
+}
+table {
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFn_6xuEmaLNLYLRO-UDgSFBDz9UPEqluaBw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFn_6xuEmaLNLYLRO-UDgSFBDz9UPEqluaBw&s');
+}
+
+.bgcolor{
+    background-color: rgb(62, 62, 7);
+}

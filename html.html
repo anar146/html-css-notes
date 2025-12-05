@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .btn-primary {
+            background-color: blue;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: gray;
+            color: white;
+        }
+        p[id] {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        div[lang|="en"]{
+            color:darkred;
+        }
+        div[lang="fr"]{
+            color:sandybrown;
+
+        }
+        li:nth-child(odd){
+            background-color: lightgray;
+            color: rgb(0, 30, 128);
+            font-size: x-large;
+            font-weight: bold;
+        }
+        li:nth-child(even){
+            font-size: x-large;
+            font-weight: bold;
+            background-color: lightblue;
+            color:brown  
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>Username</dt>
+        </dl>
+        <dd>
+            <input type="text" name="txtUsername">
+        </dd>
+        <dl>
+            <dt>Password</dt>
+        </dl>
+        <dd>
+            <input type="password" name="txtPassword">
+        </dd>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-secondary">Register</button>
+        <p> para-1</p>
+        <p id="para-2"> para-2</p>
+        <p id="para-3"> para-3</p>
+        <p> para-4</p>
+        <p id="para-5">This is the price $10.99</p> 
+        <p class="Effects">Para-6</p>   
+    </form>
+    <form>
+        <div lang="fr">French</div>
+        <div lang="en">English</div>
+        <div lang="en-GB">British English</div>
+    </form>
+    <form acton="/submit" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <ol>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+        <li>item-10</li>
+    </ol>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit ullam natus nostrum magnam eveniet cupiditate a, eius omnis possimus unde ipsa cum qui labore voluptatem voluptate velit, porro recusandae harum!</p>
+    <nav area-label=""
+</body>
+</html>

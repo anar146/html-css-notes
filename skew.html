@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 100px;
+            background-color: #4caf50;
+            margin: 20px;
+            color:chocolate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .skew-x{
+            transform: skewX(20deg);
+            background-color: burlywood;
+        }
+        .skew-y{
+            transform: skewY(30deg);
+            background-color: coral;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> CSS Transform : skew() Demo</h1>
+    <div class="box">Normal</div>
+    <div class="box skew-x">Skew X</div>
+    <div class="box skew-y">Skew Y</div>
+</body>
+</html>

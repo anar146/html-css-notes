@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    .social-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+    }
+
+    .insta,
+    .tele,
+    .twitter,
+    .telegram {
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .insta:hover,
+    .tele:hover,
+    .twitter:hover,
+    .telegram:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+</style>
+
+<body>
+    <div class="social-bar"></div>
+    <div class="bi bi-telephone tele"></div>
+    <div class="bi bi-instagram insta"></div>
+    <div class="bi bi-twitter twitter"></div>
+    <div class="bi bi-telegram telegram"></div>
+</body>
+
+</html>

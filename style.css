@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #5b21b6; /* A nice purple */
+    text-align: center;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#artist-search {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px 15px;
+    background-color: #5b21b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#search-button:hover {
+    background-color: #4c1d95;
+}
+
+#results-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#results-container img {
+    max-width: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+
+#results-container p {
+    line-height: 1.6;
+}

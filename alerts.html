@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Alerts Demo</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="container-fluid mt-4">
+        
+        <h1>System Alerts</h1>
+        <hr>
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            
+            <h4 class="alert-heading">Delete Record</h4>
+            <p class="mb-0">Record deleted successfully.</p>
+            <hr>
+            <a href="#" class="alert-link">Need Help?</a>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            <h4 class="alert-heading">Insert Complete</h4>
+            <p>Record inserted successfully into the database.</p>
+
+            <a href="#" class="btn btn-success btn-sm text-white text-decoration-none" data-bs-dismiss="alert">
+                OK
+            </a>
+        </div>
+
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

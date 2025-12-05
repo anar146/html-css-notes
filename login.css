@@ -1,0 +1,90 @@
+/* --- Global Styles --- */
+/* This makes sure our padding and borders don't break our layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5; /* A light, modern gray */
+    
+    /* This is the magic for centering the box! */
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    min-height: 100vh;      /* Makes the body at least 100% of the screen height */
+}
+
+/* --- Login Container Styling --- */
+.login-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for a "card" effect */
+    width: 100%;
+    max-width: 400px; /* Ensures it doesn't get too wide on big screens */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Form Group Styling --- */
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block; /* Makes the label sit on its own line */
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%; /* Makes the input fill the container */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* --- Button Styling --- */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff; /* A nice blue color */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer; /* Changes the mouse to a pointer on hover */
+    
+    /* A smooth color change on hover */
+    transition: background-color 0.3s ease; 
+}
+
+/* This is a "pseudo-class". It styles the button when you hover over it */
+.login-button:hover {
+    background: #0056b3; /* A darker blue */
+}
+
+/* --- Extra Links Styling --- */
+.extra-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.extra-links a {
+    color: #007bff;
+    text-decoration: none; /* Removes the underline */
+    font-size: 0.9rem;
+}
+
+.extra-links a:hover {
+    text-decoration: underline; /* Adds underline back on hover */
+}

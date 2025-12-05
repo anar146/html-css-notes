@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: rgb(255, 255, 255);}
+        p{ font-size: 1cm; color: white; }
+        p1{font-size: 1in; color: white; }
+        p2{font-size: 1cm; color: white; }
+        p3{font-size: 70pt; color: white;}
+        p4{font-size: 50px; color: white;}
+        p5{font-size: 35mm;color: white; }
+        p6{font-size: 5pc; color: white; }
+        p7{font-size: 2em; color: white; }
+        p8{font-size: 3ex; color: white; }
+        p9{font-size: 4ch; color: white; } 
+        p10{font-size: 10vw; color: white;}
+        .box{ font-size: 40px; color: rgb(169, 1, 1); border: 2px solid white; margin: 20px; padding: 20px; background: honeydew; border-radius: 40px; box-shadow: 20px; border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvESQHuPyoLOOxDdqwxryL6RjZl6sDxG6Gg&s) 30 stretch;}
+        .Box2{ font-size: 30px; color: rgb(4, 42, 130); border: 2px solid white; margin: 20px; padding: 20px; background: plum; border-radius: 50px; box-shadow: 2px; border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvESQHuPyoLOOxDdqwxryL6RjZl6sDxG6Gg&s) 30 stretch;}
+    .container{
+        height: 400px;
+        width: 400px;
+        background-color: rgba(110, 117, 118, 0.721);
+        position: relative;
+    }
+    .absolute-box{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(195, 52, 52);
+        position: absolute;
+        top: 39px;
+     left: 40px;
+        z-index: 1;
+    }
+    .absolute-box1{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(177, 193, 0);
+        position: absolute;
+      top: 70px;
+        left: 70px;
+        z-index: 2;
+
+    }
+    .absolute-box2{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(37, 160, 213);
+        position: absolute;
+      top: 100px;
+        left: 100px;
+        z-index: 3;
+
+    } 
+    p{font-size: 30px; color: black; display: flex;}
+    .child{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(194, 7, 7);
+        margin: 10px;
+        color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .child1{
+        background-color: rgb(118, 18, 18);
+    }
+    .child2{
+        background-color: green;
+    }
+    .child3{
+        background-color: blue;
+    }
+    .parent{
+        border: 2px solid black;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    </style>
+</head>
+<body>
+        <div class="child"> Child 1</div>
+        <div class="child"> Child 2</div>
+        <div class="child"> Child 3</div>
+</body>
+</html

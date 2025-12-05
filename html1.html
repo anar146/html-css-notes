@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .breadcrumb-nav {
+            background-color: rgb(255, 255, 255);
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: o 4px 6px rgba(red, green, blue, alpha)
+        } 
+        .breadcrumb-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            padding: 0 0.5rem;
+            color: #6c757d;
+        }
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .breadcrumb-item[aria-current="page"] {
+            color: #6c757d;
+            font-weight: bold;
+        }
+        p::first-letter {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #a30606;
+        }
+        p::first-line {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0d6efd;
+            flex: left;
+        }
+    </style>
+</head>
+<body>
+    <nav area-label="breadcrumb" class="breadcrumb-nav">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="#">Html</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">css</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">JS</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">ThreeJS</a>
+            </li>
+            <li class="breadcrumb-item" aria-current="page">
+                Bootstrap
+            </li>
+        </ol>
+    </nav>
+    <button type="button" class="btn btn-danger">Enter Password</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Iste similique et nobis, laborum ad minima distinctio sapiente, 
+    nostrum soluta nulla tempore explicabo doloribus ipsum facilis aliquid unde necessitatibus, maiores nihil.</p>
+
+</body>
+</html>

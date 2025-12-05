@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnab's Design</title>
+    <style>
+        /* 1. RESET & VARIABLES */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        :root { --primary: #db2777; --dark: #1f2937; --light: #fdf2f8; }
+
+        /* 2. LAYOUT STYLES */
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* 3. HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #fff1f2 0%, #fce7f3 100%);
+        }
+
+        h1 { font-size: 4rem; color: var(--primary); margin-bottom: 20px; }
+        p { font-size: 1.5rem; color: #4b5563; margin-bottom: 40px; }
+
+        /* 4. BUTTONS (Pure CSS Animation) */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(219, 39, 119, 0.3);
+        }
+
+        /* 5. GRID SECTION */
+        .features { padding: 80px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-left: 5px solid var(--primary);
+        }
+        
+        .card:hover { transform: scale(1.03); }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Simple & Beautiful</h1>å
+            <p>Designed by Arnab using only HTML & CSS.</p>
+            <a href="https://github.com/anar291"  target="_blank" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <h2>🚀 Fast Performance</h2>
+                    <p>No heavy JavaScript libraries to load. The site opens instantly.</p>
+                </div>
+                <div class="card">
+                    <h2>🎨 Clean Design</h2>
+                    <p>Modern layouts using CSS Grid and Flexbox.</p>
+                </div>
+                <div class="card">
+                    <h2>📱 Responsive</h2>
+                    <p>Looks great on mobile phones and laptops automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
